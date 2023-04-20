@@ -1,0 +1,14 @@
+[
+    {
+        "name": "set_name",
+        "params": {
+            "action": "set the team name",
+	    "student_list": [],
+	    "team_name": "whatever"
+        },
+        "returns": {
+            "action": "response",
+	    "response": "jsonstr"
+        }
+    }
+]
