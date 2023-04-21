@@ -16,7 +16,7 @@ INC_CL	=	JvTime.h
 OBJ	=	JvTime.o
 
 # rules.
-all: 	hw6client
+all: 	hw6client hw6server
 
 #
 #
@@ -32,6 +32,9 @@ hw6server.h:		ecs36b_hw6.json
 hw6client.o:		hw6client.cpp hw6client.h $(INC_CL) $(INC)
 	$(CC) -c $(CFLAGS) hw6client.cpp
 
+hw6server.o:		hw6server.cpp hw6server.h $(INC_CL) $(INC)
+	$(CC) -c $(CFLAGS) hw6server.cpp
+
 ecs36b_JSON.o:		ecs36b_JSON.cpp $(INC)
 	$(CC) -c $(CFLAGS) ecs36b_JSON.cpp
 
@@ -41,7 +44,10 @@ JvTime.o:	JvTime.cpp JvTime.h $(INC)
 hw6client:	hw6client.o ecs36b_JSON.o $(OBJ)
 	$(CC) -o hw6client hw6client.o ecs36b_JSON.o $(OBJ) $(LDFLAGS)
 
+hw6server:	hw6server.o ecs36b_JSON.o $(OBJ)
+	$(CC) -o hw6server hw6server.o ecs36b_JSON.o $(OBJ) $(LDFLAGS)
+
 clean:
-	rm -f *.o *~ core hw6client.h hw6server.h hw6client
+	rm -f *.o *~ core hw6client.h hw6server.h hw6client hw6server
 
 

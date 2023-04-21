@@ -1,0 +1,23 @@
+{
+    "987654321" : 
+	{
+		"name" : "Felix Nobody 1",
+		"score" : 0,
+		"team name" : "fire ball",
+		"user id" : "sfwu1"
+	},
+	"987654322" : 
+	{
+		"name" : "Felix Nobody 2",
+		"score" : 0,
+		"team name" : "fire ball",
+		"user id" : "sfwu2"
+	},
+	"987654323" : 
+	{
+		"name" : "Felix Nobody 3",
+		"score" : 0,
+		"team name" : "unassigned",
+		"user id" : "sfwu3"
+	}
+}

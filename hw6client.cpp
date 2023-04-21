@@ -21,11 +21,10 @@ main()
   
   jv_list[0] = "987654321";
   jv_list[1] = "987654322";
-  jv_list[2] = "987654323";
 
   //
   try {
-    myv = myClient.set_name("set_name", jv_list, "hi5555");
+    myv = myClient.set_name("set_name", jv_list, "fire ball");
   } catch (JsonRpcException &e) {
     cerr << e.what() << endl;
   }
